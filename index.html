@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mysite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section id="fir-sect">
+       <center><h2>Hello, It's Me</h2></center>
+       <center><h1 class="one">Mukhtar</h1></center>
+       <p class="p1">
+           An enthusiastic product designer currently shaping the future of web and software development by designing smooth
+           websites and software tha promotes user interction with information and data while travelling the world.
+       </p>
+
+       <p>
+          <h3>My Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>JQUERY</li>
+                <li>PYTHON</li>
+            </ul>
+       </p>
+
+       <p>
+         <h3>Social Media</h3>
+            <ul>
+                <a href="https://wa.me/+2349069915707" class="link"><li>Whatsapp</li></a>
+                <a href="https://web.facebook.com/garuba.mukhtar.5/" class="link"><li>Facebook</li></a>
+            </ul>
+       </p>
+
+       <p>
+         <h3>Portfolio</h3>
+            <ul>
+                <a href="https://mukhtarademola.github.io/simplewebsite/#" class="link"><li>News</li></a>
+            </ul>
+       </p>
+       
+   </section>
+
+    <section id="section">
+        <img src="gm.jpg" class="img">
+    </section>
+
+    <button class="open-button" onclick="openForm()">Contact Me</button>
+
+    <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container" >
+        <label for="name"><b>Name</b></label><br>
+        <input type="text" placeholder="enter your name.." name="psw" required><br>
+
+        <label for="email"><b>Email</b></label><br>
+        <input type="text" placeholder="enter your email.." name="email" required><br>
+
+        <label for="subject"><b>Subject</b></label><br>
+        <input type="text" placeholder="subject.." name="subject"><br>
+
+        <label for="message"><b>Message</b></label><br>
+        <textarea name="subject" placeholder="your message.." class="subject" cols="30" rows="10"></textarea>
+
+        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+    </div>
+
+    <script>
+    function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+
+  
+</body>
+</html>
